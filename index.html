@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+  <main>
+    <section id='card' class="card-product">
+      <picture class="card__images">
+        <source srcset="./assets/images/illustration-sign-up-desktop.svg" loading="lazy" media="(min-width: 1024px)" width="300" height="450">
+        <source srcset="./assets/images/illustration-sign-up-mobile.svg" width="400">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration sign-up" class="card-product__img">
+      </picture>
+   
+      <div class="card-product__content">
+        <div class="card-product__content-solution">
+          <h1 class="card-product__title title">Stay updated!</h1>
+          <p class="card-product__subtitle text">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ol class="card-product__list">
+            <li class="card-product__item">Product discovery and building what matters</li>
+            <li class="card-product__item">Measuring to ensure updates are a success</li>
+            <li class="card-product__item">And much more!</li>
+          </ol>
+        </div>
+        <form id="form" class="card-product__form" action="#" method="get" novalidate>
+          <label class="card-product__label">
+            <div class="card-product__span-group">
+              <span class="card-product__span">Email address </span>
+              <span id="error" class="card-product__span-error" ></span>
+            </div>
+            <input id="email" name="email" type="email" placeholder="email@company.com">
+          </label>
+          <button class="card-product__button button" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </section>
+    <section id='thanks' class="thanks hidden">
+      <img src="./assets/images/icon-list.svg" alt="icon list decor" class="thanks__img">
+      <h2 class="thanks__title title">Thanks for subscribing!</h2>
+      <p class="thanks__subtitle text">
+        A confirmation email has been sent to <a href="mailto:ash@loremcompany.com">ash@loremcompany.com.</a> Please open it and click the button inside to confirm your subscription
+      </p>
+      <button id="dismiss" class="thanks__button button" type="submit">Dismiss message</button>
+    </section>
+  </main>
+
+
+
+  <script defer src="./javascript/app.js"></script>
+</body>
+
+</html>
